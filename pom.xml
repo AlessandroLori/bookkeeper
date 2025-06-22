@@ -69,7 +69,6 @@
     <module>shaded</module>
     <module>microbenchmarks</module>
     <module>bookkeeper-slogger</module>
-    <module>tests</module>
     <module>native-io</module>
     <module>testtools</module>
   </modules>
@@ -934,6 +933,23 @@
     </extensions>
     <pluginManagement>
       <plugins>
+
+
+        <plugin>
+          <groupId>org.jacoco</groupId>
+          <artifactId>jacoco-maven-plugin</artifactId>
+          <executions>
+            <execution>
+              <goals>
+                <goal>prepare-agent</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+
+
+
+
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-checkstyle-plugin</artifactId>
