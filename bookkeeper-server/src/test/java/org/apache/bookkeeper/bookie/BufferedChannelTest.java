@@ -1,8 +1,9 @@
+package org.apache.bookkeeper.bookie;
+
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufAllocator;
 import io.netty.buffer.UnpooledByteBufAllocator;
 import io.netty.buffer.Unpooled;
-import org.apache.bookkeeper.bookie.BufferedChannel;
 import org.junit.jupiter.api.*;
 
 import java.io.IOException;
